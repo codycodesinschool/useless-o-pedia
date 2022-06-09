@@ -18,7 +18,7 @@ function shuffle(array) {
   }
 
 async function main() {
-    let f = await fetch("/facts.txt");
+    let f = await fetch("/useless-o-pedia/facts.txt");
     let factstxt = await f.text();
     let facts = factstxt.split("\n");
     let factlist = document.querySelector(".facts");
